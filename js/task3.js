@@ -23,12 +23,3 @@ const createGallery = images.map(
     `<li><img src='${image.url}' alt='${image.alt}' class='img' /></li>`
 );
 ulGalleryRef.insertAdjacentHTML("beforeend", createGallery);
-
-// const imagesRef = images.forEach((image) => {
-//   const liRef = document.createElement("li");
-//   const tagImg = document.createElement("img");
-//   tagImg.textContent = image.kays;
-//   liRef.appendChild(tagImg);
-//   gallery.appendChild(liRef);
-// });;
-qs;
