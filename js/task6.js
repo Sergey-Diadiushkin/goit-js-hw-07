@@ -1,4 +1,4 @@
-const inputRef = document.querySelector("input");
+const inputRef = document.querySelector("#validation-input");
 inputRef.addEventListener("blur", validateInput);
 
 function validateInput() {

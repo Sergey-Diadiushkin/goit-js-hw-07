@@ -16,10 +16,14 @@ const images = [
   },
 ];
 
-const ulGalleryRef = document.querySelector("#gallery");
+const ulRef = document.querySelector("#gallery");
 
 const createGallery = images.map(
   (image) =>
     `<li><img src='${image.url}' alt='${image.alt}' class='img' /></li>`
 );
-ulGalleryRef.insertAdjacentHTML("beforeend", createGallery);
+createGallery.forEach((createGallery) => {
+  console.log(createGallery);
+});
+
+ulRef.insertAdjacentHTML("afterbegin", createGallery);
